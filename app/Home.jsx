@@ -39,15 +39,14 @@ const Home = () => {
             <Text style={styles.cardText}>Add Your Goal Destination</Text>
           </TouchableOpacity>
         </Link>
+ 
 
-
-        <TouchableOpacity 
-          style={styles.logoutBtn} 
-          onPress={() => router.replace("/")}
-        >
-          <Ionicons name="log-out-outline" size={24} color="white" />
-          <Text style={styles.logoutText}>Log Out</Text>
-        </TouchableOpacity>
+         <Link href="/Profile" asChild>
+          <TouchableOpacity style={styles.card}>
+            <Ionicons name="person-outline" size={28} color="#fff" />
+            <Text style={styles.cardText}>Profile</Text>
+          </TouchableOpacity>
+        </Link>
       </View>
     </View>
   )

@@ -3,17 +3,17 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDOcEQsAWRol2AYyjiddOgOp0o3T7kdTpU",
-  authDomain: "dreamscape-2c5af.firebaseapp.com",
-  projectId: "dreamscape-2c5af",
-  storageBucket: "dreamscape-2c5af.appspot.com",
-  messagingSenderId: "673505932021",
-  appId: "1:673505932021:web:908c19d105d707cb62cbbc"
+  apiKey: "AIzaSyCzVwygm8eCejO3YqLrCAZYDal7pFa7oFo",
+  authDomain: "midterm-dreamscape-22dfe.firebaseapp.com",
+  projectId: "midterm-dreamscape-22dfe",
+  storageBucket: "midterm-dreamscape-22dfe.firebasestorage.app",
+  messagingSenderId: "496737832403",
+  appId: "1:496737832403:web:0107e8d33ad6f8ac0cb326"
 };
 
 const app = initializeApp(firebaseConfig);
 
-const auth = getAuth(app);
-const db = getFirestore(app); 
-export { auth, db };
-//
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+
+export default app;
